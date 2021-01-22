@@ -1,0 +1,38 @@
+#pot {
+  bottom: 15%;
+  
+  position: absolute;
+  -webkit-animation: linear ;
+  -webkit-animation-name: run;
+  
+  -webkit-animation-duration: 40s;
+  
+  
+}
+#pot:active {
+  animation-play-state: paused;
+}
+@keyframes run {
+  
+  0% {
+    left: 0;
+  }
+   48% {
+    -webkit-transform: rotateY(0deg); 
+  }
+  50% { 
+    left: calc(100% - 100px);
+    -webkit-transform: rotateY(180deg); 
+  }
+  98% {
+    -webkit-transform: rotateY(180deg); 
+  }
+  100% {
+    left: 0;    
+     -webkit-transform: rotateY(0deg);
+  } 
+}
+
+.ccc{
+  padding: 20px 200px;
+}
